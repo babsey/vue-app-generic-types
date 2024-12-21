@@ -6,6 +6,10 @@ import type { NESTProject } from './project'
 
 export class NESTNetwork extends BaseNetwork<NESTModel, NESTNode, NESTConnection> {
   constructor(project: NESTProject) {
-    super(project, { Model: NESTModel, Node: NESTNode, Connection: NESTConnection })
+    super(project, {
+      Model: NESTModel,
+      Node: NESTNode,
+      Connection: NESTConnection,
+    })
   }
 }
